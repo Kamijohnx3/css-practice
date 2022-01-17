@@ -1,0 +1,93 @@
+main {
+    padding-top: 32px;
+    margin-top: 20px;
+}
+
+.background {
+    background: url("../images/plans-background.jpg");
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: -1;
+}
+
+
+/* plan design info */
+
+.plan-section {
+    color: black;
+    margin: 5px;
+    padding: 16px;
+    width: 70%;   /* how wide the section boxes are (70% of the page) */
+    border-radius: 100px;
+    text-align: center;
+    position: relative; /* use this position to be able to move things INSIDE this element */
+}
+
+.plan-section:hover,
+.plan-section:active {
+    box-shadow: 4px 4px 4px rgba(35, 155, 211, 0.671);
+    background-color: salmon;
+}
+
+.clearfix {  
+    clear: both; /* makes sure the block element's space is cleared on both sides so it doesn't wrap the text */
+ } 
+
+.plus {
+    background: rgba(196, 69, 154, 0.726);
+}
+
+.free {
+    background: rgba(219, 146, 195, 0.726);
+    float: right; /* you can move the block element without messing up the others; good for placing images over text */
+}
+
+.premium {
+    background: rgba(156, 67, 126, 0.726);
+}
+
+.plan-section a {
+    text-decoration: none;
+    font: inherit;
+}
+
+.plan-name {
+    color: rgb(77, 74, 74);
+}
+
+.premium .plan-name {
+    color:  rgb(43, 40, 40);;
+}
+
+.plan-badge {
+    color: turquoise;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgb(87, 84, 84);
+    font-size: larger;
+    position: absolute; /* this position makes it stay inside a particular element it is the child of */
+    top: 2px;
+    right: 60px;
+}
+
+.blurb {
+    color: white;
+}
+
+.premium .blurb {
+    color: whitesmoke;
+}
+
+.plan-section p {
+    background: wheat;
+    border-radius: 100px;
+    padding: 15px;
+    margin: 20px;
+    color: rgb(87, 84, 84);
+}
+
+/* position: sticky (is a mixture of relative and fixed position) 
+it moves an element down the page but stays inside the parent element */

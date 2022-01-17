@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+/* header and navigation section info */
+
+.main-header {
+    background: rgb(214, 238, 78) 10px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 5px 20px;
+    z-index: 1;
+}
+
+.main-header > div {
+    display: inline-block;
+}
+
+.main-header__brand {
+    color: rgb(167, 100, 167);
+    text-decoration: none; /* gets rid of browser characteristics for links and other clickable things? */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-nav {
+    display: inline-block; /* creates a horizontal list */
+    text-align: right;
+    width: calc(100% - 70px); /* keeps the navi buttons on one line with the logo in the header */
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; /* gets rid of any browser list characteristics */
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0px 16px;
+    padding: 5px 0;
+}
+
+.main-nav__item a { /*using a combinator to change all links under the list element */
+    text-decoration: none;
+    color: black;
+    padding: 3px 0;
+}
+
+.main-nav__item a:hover, /* grouping elements or classes that have the same rules to declutter */
+.main-nav__item a:active {
+    color: coral;
+    border-bottom: white 3px solid;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: rgb(167, 100, 167);
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: rgb(167, 100, 167);
+    background: white;
+    border: none;
+}
+
+/* buttons */
+
+.button {
+    margin: 10px 0px;
+    border-radius: 10px;
+    border-color: white;
+    background: rgb(245, 235, 98);
+    color: rgb(63, 62, 62);
+    font: inherit;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: turquoise;
+    color: black;
+}
+
+:focus {
+    outline: none;
+    box-shadow: 0 0 10px #d6e2da;
+}
+
+/* footer information */
+
+.main-footer {
+    background: rgb(170, 167, 167);
+    margin-top: 48px;
+    padding: 9px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+
+}
+
+.main-footer__links {
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.main-footer__link a {      /*to target the link text, we need to create a combinator specific to them */
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: rgb(71, 70, 66);
+}

@@ -1,0 +1,135 @@
+
+/* first section main photo and description */
+
+#product-overview {
+    background:url("main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 528px;
+
+}
+
+#product-overview h1 {
+    color: rgb(220, 238, 119);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    width: 100%;
+}
+
+
+/* next section plan designs */
+
+.section-title {
+    color: rgb(147, 74, 175);
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+}
+
+.plan__list {
+    width: 90%;
+    margin: auto;
+}
+
+.plan {
+    background:rgb(218, 165, 165);
+    text-align: center;
+    color: rgb(71, 70, 66);
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan--special {
+    background: rgb(141, 107, 107);
+    color: white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.plan__highlight {
+    background: rgb(235, 158, 85);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(230, 229, 229, 1); 
+}
+
+.plan__title {
+    color: turquoise;
+}
+
+.plan__price {
+    color: rgb(147, 74, 175);
+}
+
+.plan--special .plan__price {
+    color:rgb(214, 238, 78);
+}
+
+
+.plan__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan__features li {
+    margin: 5px 0px;
+}
+
+/* button information for plans */
+
+.plan--special .button {
+    background: rgb(147, 74, 175);
+    color: snow;
+    border-color: rgb(235, 158, 85);
+}
+
+.plan--special .button:hover,
+.plan--special .button:active {
+    background: rgb(235, 158, 85);
+    color: black;
+}
+
+
+/* key features section */
+
+#key-features {
+    background: rgb(214, 238, 78);
+    margin-top: 60px;
+}
+
+#key-features .section-title {
+    background: white;
+    padding-bottom: 30px;
+}
+
+.key-feature__list {
+   list-style: none;
+   text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    background: turquoise;
+    width: 128px; /* width and height are the same, so a 50% border radius creates a circle */
+    height: 128px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: auto;  /* automatically centers the "image" to the surrounding elements */
+}
+
+.key-feature__description {
+    text-align: center;
+    color: rgb(63, 62, 62);
+    font-weight: bold;
+    font-size: 17px;
+}
